@@ -1,0 +1,23 @@
+const s = (inner, extra = '') => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${inner}</svg>`;
+export const I = {
+  roll: s('<rect class="f" x="5" y="4.5" width="14" height="16.5" rx="3.5" fill="currentColor" fill-opacity="0"/><path d="M9.5 4.5h5v-.2a1.3 1.3 0 0 0-1.3-1.3h-2.4a1.3 1.3 0 0 0-1.3 1.3z"/><path d="m9 13.2 2.2 2.2L15.3 11"/>'),
+  students: s('<circle class="f" cx="12" cy="12" r="9" fill="currentColor" fill-opacity="0"/><path d="M8.4 14c.9 1.7 2.2 2.5 3.6 2.5s2.7-.8 3.6-2.5"/><circle cx="9" cy="10" r=".5" fill="currentColor"/><circle cx="15" cy="10" r=".5" fill="currentColor"/>'),
+  pay: s('<circle class="f" cx="12" cy="12" r="9" fill="currentColor" fill-opacity="0"/><path d="m8.6 7.8 3.4 4.4 3.4-4.4M12 12.2V17M9.6 13h4.8M9.6 15.1h4.8"/>'),
+  summary: s('<rect class="f" x="4" y="12" width="4" height="8" rx="1.4" fill="currentColor" fill-opacity="0"/><rect class="f" x="10" y="4" width="4" height="16" rx="1.4" fill="currentColor" fill-opacity="0"/><rect class="f" x="16" y="8.5" width="4" height="11.5" rx="1.4" fill="currentColor" fill-opacity="0"/>'),
+  gear: s('<circle cx="12" cy="12" r="3"/><path d="M19.4 14.6a1.6 1.6 0 0 0 .3 1.8l.1.1a1.9 1.9 0 1 1-2.7 2.7l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V20a1.9 1.9 0 1 1-3.8 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a1.9 1.9 0 1 1-2.7-2.7l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H4a1.9 1.9 0 1 1 0-3.8h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a1.9 1.9 0 1 1 2.7-2.7l.1.1a1.6 1.6 0 0 0 1.8.3h0a1.6 1.6 0 0 0 1-1.5V4a1.9 1.9 0 1 1 3.8 0v.1a1.6 1.6 0 0 0 1 1.5h0a1.6 1.6 0 0 0 1.8-.3l.1-.1a1.9 1.9 0 1 1 2.7 2.7l-.1.1a1.6 1.6 0 0 0-.3 1.8v0a1.6 1.6 0 0 0 1.5 1H20a1.9 1.9 0 1 1 0 3.8h-.1a1.6 1.6 0 0 0-1.5 1z"/>'),
+  plus: s('<path d="M12 5v14M5 12h14"/>'),
+  back: s('<path d="m14.5 5.5-6.5 6.5 6.5 6.5"/>'),
+  chev: s('<path d="m9.5 5.5 6.5 6.5-6.5 6.5"/>'),
+  check: s('<path class="ck" d="m5 12.5 4.5 4.5L19 7.5"/>'),
+  umbrella: s('<path d="M3.5 12a8.5 8.5 0 0 1 17 0z"/><path d="M12 12v6.2a1.8 1.8 0 0 0 3.6 0"/>'),
+  warn: s('<path d="M12 4 2.8 19.5h18.4z"/><path d="M12 10v4.4M12 17.3v.1"/>'),
+  calendar: s('<rect x="3.5" y="5" width="17" height="15.5" rx="3.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/>'),
+  trash: s('<path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 1.8h6a2 2 0 0 0 2-1.8l1-12M9 7V4.5h6V7"/>'),
+  edit: s('<path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/>'),
+  phone: s('<path d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19 14.5V18a2 2 0 0 1-2 2A14 14 0 0 1 3 6a2 2 0 0 1 2-2z"/>'),
+  share: s('<path d="M12 15V3.5M7.5 8 12 3.5 16.5 8"/><path d="M5 12.5V19a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 19v-6.5"/>'),
+  upload: s('<path d="M12 4v11.5M7.5 11.5 12 16l4.5-4.5"/><path d="M5 18.5V19a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 19v-.5"/>'),
+  sheet: s('<rect x="4.5" y="3.5" width="15" height="17" rx="3"/><path d="M4.5 9.5h15M4.5 14.5h15M10 9.5v11"/>'),
+  sparkle: s('<path d="M12 3.5 13.8 9l5.7 1.8-5.7 1.8L12 18l-1.8-5.4-5.7-1.8L10.2 9z"/>'),
+  close: s('<path d="m6 6 12 12M18 6 6 18"/>'),
+};
